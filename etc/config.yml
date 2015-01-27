@@ -1,0 +1,8 @@
+mongo:
+  db: message
+  host: 10.16.49.29
+  port: 27017
+
+redis:
+  host: 10.16.49.29
+  port: 6379
