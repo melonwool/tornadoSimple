@@ -5,5 +5,7 @@
  - tornado
  - redis
  - mongodb
+
 ## 启动方式
+ - 建议部署 virtualenv 
  - python httpd.py --logging=debug --port=8000 --debug=1
