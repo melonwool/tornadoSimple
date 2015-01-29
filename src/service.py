@@ -33,6 +33,7 @@ class Application(tornado.web.Application):
     def __init__(self, debug = False):
         handlers = [
             (r"/", IndexHandler),
+            (r"/admin/login", AdminLoginHandler),
             (r"/version", VersionHandler),
         ]
 
