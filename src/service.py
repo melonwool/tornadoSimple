@@ -13,7 +13,7 @@ from os.path import dirname, join, abspath
 import redis
 import pymongo
 
-from lib import torndb
+#from lib import torndb
 
 from handlers import *
 
