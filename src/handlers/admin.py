@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 import tornado.web
-import models import MGMessage
+from models import MGMessage
 
 class AdminLoginHandler(tornado.web.RequestHandler):
     def get(self):

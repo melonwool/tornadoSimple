@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
 from .index import (
-    IndexHandler,
+    IndexHandler
+)
+from .admin import (
     AdminLoginHandler
 )
