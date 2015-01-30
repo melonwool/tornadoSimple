@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 from .common import MGModel
-
 class MGMessage(MGModel):
     @property
     def db(self):
@@ -19,4 +18,14 @@ class MGMessage(MGModel):
             messages.append(message)
         return messages
 
+class User(MGModel):
+    @property
+    def db(self):
+        return self.db_user
+
+    def findUser(self, name):
+        where = {
+            "name":name
+        }
+        return self.db.user.find_one(where)
     

@@ -4,5 +4,6 @@ from .common import(
 )
 
 from .message import(
-    MGMessage
+    MGMessage,
+    User
 )

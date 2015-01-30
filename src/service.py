@@ -52,9 +52,10 @@ class Application(tornado.web.Application):
         self.config = load_config(root, 'config')
 
         self._setup_mongo()
-        self._setup_redis()
+        #self._setup_redis()
 
-        MGModel.setup(self.mongo, cache = self.cache)
+        #MGModel.setup(self.mongo, cache = self.cache)
+        MGModel.setup(self.mongo)
 
         return
     
